@@ -1,5 +1,5 @@
 import mysql.connector
-from mysql.connector import Error
+#from mysql.connector import Error
 
 #Creating the Database
 try:
@@ -10,7 +10,7 @@ try:
 	)
 	mycursor = connection.cursor()
 	mycursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
-except Error as e:
+except mysql.connector.Error as e:
 	print("Error Creating Database", e)
 	
 else:
