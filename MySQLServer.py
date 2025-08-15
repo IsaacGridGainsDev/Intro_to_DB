@@ -9,7 +9,7 @@ try:
 		password = "pass_word"
 	)
 	mycursor = connection.cursor()
-	mycursor.execute("CREATE DATABASE alx_book_store")
+	mycursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
 except Error as e:
 	print("Error Creating Database", e)
 	
