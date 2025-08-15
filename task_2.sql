@@ -25,7 +25,7 @@ CREATE TABLE Orders(
 	order_id INT AUTO_INCREMNENT PRIMARY KEY,
 	customer_id INT,
 	order_date DATE,
-	FOREIGN KEY (cusromer_id) REFERENCES Customers(customer_id) ON DELETE CASCADE ON UPDATE CASCADE
+	FOREIGN KEY (customer_id) REFERENCES Customers(customer_id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE Order_Details(
